@@ -2,9 +2,28 @@
 
 A beginner-friendly open-source toolkit for practicing DevOps/SRE fundamentals through small, reproducible Linux and networking labs.
 
-## Why this project exists
+## Project status
 
-Many beginner learners study Linux, networking, and cloud concepts separately, but struggle to prove what they actually did. This project turns small practice tasks into a repeatable workflow:
+This is an initial public release with a complete maintainer workflow: CI, tests, issue templates, a public roadmap, a milestone, and release notes. The project is building durable OSS foundations before expanding labs and contributor-facing documentation.
+
+Operational links:
+
+- [Issues](https://github.com/william21c1210-ops/ops-study-maintainer-kit/issues)
+- [Milestone v0.2.0](https://github.com/william21c1210-ops/ops-study-maintainer-kit/milestone/1)
+- [Release v0.1.0](https://github.com/william21c1210-ops/ops-study-maintainer-kit/releases/tag/v0.1.0)
+
+## Who this is for
+
+- Beginner DevOps/SRE learners
+- Students learning Linux, networking, and cloud basics
+- Learners who need reproducible practice evidence for portfolios
+- Korean/Japanese learners who want structured technical documentation templates
+
+## Why this project matters
+
+Many beginner learners can run commands, but cannot easily turn practice into reviewable evidence. This project closes that gap by making small DevOps/SRE labs reproducible, testable, and reportable.
+
+The workflow is intentionally simple:
 
 1. run a small lab,
 2. collect command output,
@@ -12,7 +31,7 @@ Many beginner learners study Linux, networking, and cloud concepts separately, b
 4. generate a Markdown learning report,
 5. keep a public trail of issues, fixes, and releases.
 
-The goal is to help new learners build operational evidence, not just notes.
+The focus is on operational fundamentals: Linux, networking, cloud basics, validation, and technical documentation. The goal is to help learners build evidence that can be reviewed, repeated, and improved over time.
 
 ## Core features
 
@@ -48,15 +67,19 @@ ops-study-kit check-text --file examples/sample.log --contains ERROR
 
 ## Roadmap
 
-- [ ] Add Linux command validation presets
-- [ ] Add networking mini-labs: HTTP status, DNS, ping vs curl
-- [ ] Add AWS beginner labs: S3, IAM, EC2 basics
-- [ ] Add Korean and Japanese learning report templates
-- [ ] Add issue triage helpers for beginner contributors
+The v0.2.0 roadmap is connected to the current issue and milestone workflow:
+
+- [ ] Linux `grep`/`find` practice lab
+- [ ] `ping` vs `curl` networking lab
+- [ ] Korean beginner guide
+- [ ] AWS S3 beginner lab template
+- [ ] Japanese report template improvement
 
 ## Maintainer workflow
 
-This repository is maintained as a learning-oriented OSS project. Maintenance work includes:
+This repository is maintained as a learning-oriented OSS project with issues, milestone planning, release notes, CI, tests, and reusable templates. Beginner-friendly issues are used to make future contribution paths easier to understand.
+
+Maintenance work includes:
 
 - issue triage
 - documentation updates
@@ -64,6 +87,17 @@ This repository is maintained as a learning-oriented OSS project. Maintenance wo
 - release notes
 - beginner contribution review
 - automation for report generation and validation
+
+## How Codex and API credits would help
+
+Codex and API credits would directly support maintainer work where speed and consistency matter:
+
+- triaging issues into clear beginner-friendly tasks
+- generating small lab templates for Linux, networking, and cloud basics
+- reviewing documentation for clarity and reproducibility
+- expanding tests around CLI behavior and report generation
+- generating study reports from validated lab output
+- drafting release notes from completed issues and changes
 
 ## Contributing
 
