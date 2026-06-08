@@ -65,6 +65,16 @@ ops-study-kit new-report --title "Linux grep and pipe practice" --output example
 ops-study-kit check-text --file examples/sample.log --contains ERROR
 ```
 
+## Documentation and labs
+
+Start here if you are new to the project:
+
+- [Korean beginner quickstart](docs/ko/quickstart.md)
+- [Linux grep/find practice lab](examples/linux-grep-find-lab.md)
+- [Networking ping vs curl practice lab](examples/networking-ping-vs-curl-lab.md)
+- [Korean study report template](templates/study-report-ko.md)
+- [Japanese study report template](templates/study-report-ja.md)
+
 ## Roadmap
 
 The v0.2.0 roadmap is connected to the current issue and milestone workflow:
