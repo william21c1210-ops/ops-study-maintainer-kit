@@ -4,13 +4,15 @@ A beginner-friendly open-source toolkit for practicing DevOps/SRE fundamentals t
 
 ## Project status
 
-This is an initial public release with a complete maintainer workflow: CI, tests, issue templates, a public roadmap, a milestone, and release notes. The project is building durable OSS foundations before expanding labs and contributor-facing documentation.
+This is an early public OSS project with an exercised maintainer workflow: CI, tests, issue templates, a public roadmap, milestones, release notes, pull requests, and closed issues.
+
+The project is building durable OSS foundations before expanding CLI features, validation helpers, and contributor-facing documentation.
 
 Operational links:
 
 - [Issues](https://github.com/william21c1210-ops/ops-study-maintainer-kit/issues)
 - [Milestone v0.2.0](https://github.com/william21c1210-ops/ops-study-maintainer-kit/milestone/1)
-- [Release v0.1.0](https://github.com/william21c1210-ops/ops-study-maintainer-kit/releases/tag/v0.1.0)
+- [Releases](https://github.com/william21c1210-ops/ops-study-maintainer-kit/releases)
 
 ## Who this is for
 
@@ -72,18 +74,22 @@ Start here if you are new to the project:
 - [Korean beginner quickstart](docs/ko/quickstart.md)
 - [Linux grep/find practice lab](examples/linux-grep-find-lab.md)
 - [Networking ping vs curl practice lab](examples/networking-ping-vs-curl-lab.md)
+- [AWS S3 beginner lab template](templates/aws-s3-beginner-lab.md)
+- [AWS S3 evidence example](examples/aws-s3-evidence-example.md)
 - [Korean study report template](templates/study-report-ko.md)
 - [Japanese study report template](templates/study-report-ja.md)
 
 ## Roadmap
 
-The v0.2.0 roadmap is connected to the current issue and milestone workflow:
+The v0.2.0 roadmap was completed through issue-driven PR workflow:
 
-- [ ] Linux `grep`/`find` practice lab
-- [ ] `ping` vs `curl` networking lab
-- [ ] Korean beginner guide
-- [ ] AWS S3 beginner lab template
-- [ ] Japanese report template improvement
+- [x] Linux `grep`/`find` practice lab
+- [x] `ping` vs `curl` networking lab
+- [x] Korean beginner guide
+- [x] AWS S3 beginner lab template
+- [x] Japanese report template improvement
+
+Next focus areas include small CLI improvements, additional validation helpers, and more beginner-friendly cloud practice templates.
 
 ## Maintainer workflow
 
