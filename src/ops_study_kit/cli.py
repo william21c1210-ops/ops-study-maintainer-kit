@@ -3,6 +3,27 @@ from pathlib import Path
 from datetime import datetime
 
 
+RESOURCE_ENTRIES = (
+    ("Korean beginner quickstart", "docs/ko/quickstart.md"),
+    ("Linux grep/find lab", "examples/linux-grep-find-lab.md"),
+    ("Networking ping vs curl lab", "examples/networking-ping-vs-curl-lab.md"),
+    ("AWS S3 beginner lab template", "templates/aws-s3-beginner-lab.md"),
+    ("AWS S3 evidence example", "examples/aws-s3-evidence-example.md"),
+    ("Korean study report template", "templates/study-report-ko.md"),
+    ("Japanese study report template", "templates/study-report-ja.md"),
+)
+
+
+def get_resource_list() -> str:
+    lines = ["Available resources:"]
+    lines.extend(f"- {label}: {path}" for label, path in RESOURCE_ENTRIES)
+    return "\n".join(lines)
+
+
+def list_resources() -> None:
+    print(get_resource_list())
+
+
 def create_report(title: str, output: str) -> None:
     path = Path(output)
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -72,6 +93,8 @@ def main() -> None:
     check.add_argument("--file", required=True)
     check.add_argument("--contains", required=True)
 
+    sub.add_parser("list-resources", help="Show available docs, labs, and templates")
+
     args = parser.parse_args()
 
     if args.command == "new-report":
@@ -80,6 +103,10 @@ def main() -> None:
 
     if args.command == "check-text":
         raise SystemExit(check_text(args.file, args.contains))
+
+    if args.command == "list-resources":
+        list_resources()
+        return
 
 
 if __name__ == "__main__":

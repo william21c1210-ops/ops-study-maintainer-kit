@@ -1,5 +1,9 @@
 # Ops Study Maintainer Kit
 
+![CI](https://github.com/william21c1210-ops/ops-study-maintainer-kit/actions/workflows/ci.yml/badge.svg)
+![Release](https://img.shields.io/github/v/release/william21c1210-ops/ops-study-maintainer-kit)
+![License](https://img.shields.io/github/license/william21c1210-ops/ops-study-maintainer-kit)
+
 A beginner-friendly open-source toolkit for practicing DevOps/SRE fundamentals through small, reproducible Linux, networking, and cloud labs.
 
 ## Project status
@@ -40,7 +44,7 @@ The focus is on operational fundamentals: Linux, networking, cloud basics, valid
 - Python CLI for creating and validating simple ops-learning labs
 - Markdown report generation from lab results
 - Templates for GitHub issues, pull requests, and release notes
-- Beginner-friendly examples for Linux and networking study
+- Beginner-friendly examples for Linux, networking, and cloud study
 - CI workflow for tests and basic quality checks
 
 ## Example use cases
@@ -59,6 +63,23 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -e ".[dev]"
 ```
+
+## 60-second demo
+
+After installing the project, try this minimal flow:
+
+```bash
+ops-study-kit new-report --title "Linux grep/find practice" --output examples/my-report.md
+ops-study-kit check-text --file examples/linux-grep-find-sample.log --contains ERROR
+```
+
+Expected result:
+
+```text
+PASS: found 'ERROR' in examples\linux-grep-find-sample.log
+```
+
+This shows the basic workflow: create a study report, validate a small practice artifact, and keep the result as reviewable evidence.
 
 ## Usage
 
