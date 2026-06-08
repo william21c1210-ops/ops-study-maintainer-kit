@@ -20,6 +20,7 @@
 
 - Cloud documentation uses placeholders such as `<bucket-name>` and `<region>`.
 - No AWS credentials, account IDs, private URLs, or real infrastructure details are included.
+- Learners are reminded to clean up test resources that may incur cost.
 
 ## 0.1.0
 

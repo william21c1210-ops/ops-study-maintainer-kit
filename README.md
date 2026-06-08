@@ -1,6 +1,6 @@
 # Ops Study Maintainer Kit
 
-A beginner-friendly open-source toolkit for practicing DevOps/SRE fundamentals through small, reproducible Linux and networking labs.
+A beginner-friendly open-source toolkit for practicing DevOps/SRE fundamentals through small, reproducible Linux, networking, and cloud labs.
 
 ## Project status
 
