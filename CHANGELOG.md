@@ -1,5 +1,16 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- Added `ops-study-kit list-resources` to show available docs, labs, and templates.
+
+### Changed
+
+- Added README badges and a 60-second demo.
+- Updated README wording to reflect Linux, networking, and cloud study resources.
+
 ## 0.2.0 - 2026-06-09
 
 ### Added
