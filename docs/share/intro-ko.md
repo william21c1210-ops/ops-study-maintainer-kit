@@ -38,6 +38,8 @@ ops-study-kit new-evidence-pack --title "Linux grep/find practice" --area linux 
 
 `new-evidence-pack`은 목표, 환경, 실행 명령어, 관찰 결과, 검증, 헷갈린 점, 배운 점, 포트폴리오 요약, 다음 실습을 포함한 Markdown evidence pack을 생성합니다. Linux, 네트워크, AWS 같은 기초 실습을 마친 뒤 결과를 정리하는 출발점으로 사용할 수 있습니다.
 
+생성되는 결과물 예시는 저장소의 [Generated evidence pack example](../../examples/generated-evidence-pack-example.md)에서 볼 수 있습니다.
+
 README에는 설치 후 바로 따라 해볼 수 있는 60-second demo도 있습니다. 짧은 흐름으로 리포트를 만들고, 작은 실습 파일을 검증하고, 결과를 기록으로 남기는 방식을 확인할 수 있습니다.
 
 ## 초보자가 얻을 수 있는 것

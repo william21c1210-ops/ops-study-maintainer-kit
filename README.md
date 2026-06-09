@@ -4,7 +4,9 @@
 ![Release](https://img.shields.io/github/v/release/william21c1210-ops/ops-study-maintainer-kit)
 ![License](https://img.shields.io/github/license/william21c1210-ops/ops-study-maintainer-kit)
 
-A beginner-friendly open-source toolkit for practicing DevOps/SRE fundamentals through small, reproducible Linux, networking, and cloud labs.
+Turn Linux, networking, and cloud practice into reviewable Markdown evidence.
+
+A beginner-friendly open-source CLI toolkit for DevOps/SRE learners.
 
 ## Project status
 
@@ -24,6 +26,24 @@ Operational links:
 - Students learning Linux, networking, and cloud basics
 - Learners who need reproducible practice evidence for portfolios
 - Korean/Japanese learners who want structured technical documentation templates
+
+## What it creates
+
+Ops Study Maintainer Kit helps learners create Markdown records that include:
+
+- goals
+- environment
+- commands run
+- observed results
+- validation
+- mistakes or confusion
+- lessons learned
+- portfolio summaries
+- next practice steps
+
+See a generated example:
+
+- [Generated evidence pack example](examples/generated-evidence-pack-example.md)
 
 ## Why this project matters
 
@@ -117,6 +137,7 @@ Start here if you are new to the project:
 - [Networking ping vs curl practice lab](examples/networking-ping-vs-curl-lab.md)
 - [AWS S3 beginner lab template](templates/aws-s3-beginner-lab.md)
 - [AWS S3 evidence example](examples/aws-s3-evidence-example.md)
+- [Generated evidence pack example](examples/generated-evidence-pack-example.md)
 - [Korean study report template](templates/study-report-ko.md)
 - [Japanese study report template](templates/study-report-ja.md)
 - [Project plan and release strategy](docs/project-plan.md)
