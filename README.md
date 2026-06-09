@@ -99,6 +99,7 @@ Start here if you are new to the project:
 - [AWS S3 evidence example](examples/aws-s3-evidence-example.md)
 - [Korean study report template](templates/study-report-ko.md)
 - [Japanese study report template](templates/study-report-ja.md)
+- [Project plan and release strategy](docs/project-plan.md)
 
 ## Roadmap
 
