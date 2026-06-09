@@ -24,6 +24,74 @@ def list_resources() -> None:
     print(get_resource_list())
 
 
+def build_evidence_pack(title: str, area: str) -> str:
+    return f"""# {title}
+
+## Area
+
+{area}
+
+## Date
+
+{datetime.now().strftime("%Y-%m-%d")}
+
+## Goal
+
+Describe what you are trying to practice.
+
+## Environment
+
+- OS:
+- Tool version:
+- Notes:
+
+## Commands Run
+
+```bash
+# Record commands here
+```
+
+## Expected Result
+
+Describe what you expected to happen.
+
+## Observed Result
+
+Paste safe command output or observations here.
+
+## Validation
+
+Describe how you verified the result.
+
+## Mistake or Confusion
+
+Write what was confusing or incorrect at first.
+
+## What I Changed
+
+Write what you changed, retried, or corrected.
+
+## What I Learned
+
+Summarize the technical point you learned.
+
+## Portfolio Summary
+
+Write a short explanation that can be reused in a portfolio or study log.
+
+## Next Practice
+
+Write the next command, lab, or concept to practice.
+"""
+
+
+def create_evidence_pack(title: str, area: str, output: str) -> None:
+    path = Path(output)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(build_evidence_pack(title, area), encoding="utf-8")
+    print(f"Created evidence pack: {path}")
+
+
 def create_report(title: str, output: str) -> None:
     path = Path(output)
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -95,6 +163,14 @@ def main() -> None:
 
     sub.add_parser("list-resources", help="Show available docs, labs, and templates")
 
+    evidence = sub.add_parser(
+        "new-evidence-pack",
+        help="Create a portfolio-style Markdown evidence pack",
+    )
+    evidence.add_argument("--title", required=True)
+    evidence.add_argument("--area", required=True)
+    evidence.add_argument("--output", required=True)
+
     args = parser.parse_args()
 
     if args.command == "new-report":
@@ -106,6 +182,10 @@ def main() -> None:
 
     if args.command == "list-resources":
         list_resources()
+        return
+
+    if args.command == "new-evidence-pack":
+        create_evidence_pack(args.title, args.area, args.output)
         return
 
 

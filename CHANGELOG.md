@@ -1,15 +1,20 @@
 # Changelog
 
-## Unreleased
+## 0.3.0 - 2026-06-09
 
 ### Added
 
 - Added `ops-study-kit list-resources` to show available docs, labs, and templates.
+- Added `ops-study-kit new-evidence-pack` to generate portfolio-style Markdown evidence packs.
+- Added tests for evidence pack generation.
+- Added README evidence pack demo.
 
 ### Changed
 
 - Added README badges and a 60-second demo.
 - Updated README wording to reflect Linux, networking, and cloud study resources.
+- Updated package version metadata to `0.3.0`.
+- Clarified the project positioning as an evidence layer for beginner DevOps/SRE learners.
 
 ## 0.2.0 - 2026-06-09
 

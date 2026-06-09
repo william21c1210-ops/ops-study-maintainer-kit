@@ -29,6 +29,8 @@ Operational links:
 
 Many beginner learners can run commands, but cannot easily turn practice into reviewable evidence. This project closes that gap by making small DevOps/SRE labs reproducible, testable, and reportable.
 
+This project acts as a small evidence layer for beginner DevOps/SRE learners: it helps turn practice into reviewable Markdown records.
+
 The workflow is intentionally simple:
 
 1. run a small lab,
@@ -80,6 +82,24 @@ PASS: found 'ERROR' in examples\linux-grep-find-sample.log
 ```
 
 This shows the basic workflow: create a study report, validate a small practice artifact, and keep the result as reviewable evidence.
+
+## Evidence pack demo
+
+Create a portfolio-style evidence pack:
+
+```bash
+ops-study-kit new-evidence-pack --title "Linux grep/find practice" --area linux --output examples/evidence-pack.md
+```
+
+You should see a message similar to:
+
+```text
+Created evidence pack: <output-path>
+```
+
+This creates a Markdown file with sections for goals, environment, commands, observations, validation, mistakes, lessons learned, portfolio summary, and next practice.
+
+> Do not commit credentials, account IDs, private URLs, or sensitive command output when documenting cloud practice.
 
 ## Usage
 
